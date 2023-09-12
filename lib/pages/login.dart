@@ -2,11 +2,10 @@
 
 import 'package:flutter/material.dart';
 import 'package:hackheads/data.dart';
-import 'components/widgets.dart';
+import '../components/widgets.dart';
 import 'register.dart';
 import 'homepage.dart';
-import 'data.dart';
-import 'components/textbox.dart';
+import '../components/textbox.dart';
 
 class Login extends StatelessWidget {
   const Login({super.key});

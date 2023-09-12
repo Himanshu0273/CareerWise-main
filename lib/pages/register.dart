@@ -9,8 +9,8 @@ import 'package:flutter/material.dart';
 import 'package:hackheads/components/contants.dart';
 import 'package:hackheads/components/widgets.dart';
 import 'package:google_nav_bar/google_nav_bar.dart';
-import 'package:hackheads/login.dart';
-import 'data.dart';
+import 'package:hackheads/pages/login.dart';
+import '../data.dart';
 
 class Register extends StatefulWidget {
   Register({super.key});
@@ -46,9 +46,11 @@ class _RegisterState extends State<Register> {
             tabBorderRadius: 10.0,
             selectedIndex: _selectedIndex,
             onTabChange: (index) {
-              setState(() {
-                _selectedIndex = index;
-              });
+              setState(
+                () {
+                  _selectedIndex = index;
+                },
+              );
             },
             padding: EdgeInsets.all(20.0),
             tabs: [
@@ -157,15 +159,15 @@ class _RegisterState extends State<Register> {
                           children: [
                             Text(
                               'Choose',
-                              style: textStyle2,
+                              style: ktextStyle2,
                             ),
                             Text(
                               'the best path\nwith our guided',
-                              style: textStyle1,
+                              style: ktextStyle1,
                             ),
                             Text(
                               'assistance for your\nFuture career and\nmake your strides\nin the right course\nof action',
-                              style: textStyle1,
+                              style: ktextStyle1,
                             ),
                           ],
                         ),
