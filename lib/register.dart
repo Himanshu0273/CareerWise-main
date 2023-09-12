@@ -72,120 +72,128 @@ class _RegisterState extends State<Register> {
             ],
           ),
         ),
-        body: Container(
-          padding: EdgeInsets.only(left: 40.0, top: 60, right: 40.0),
-          child: SingleChildScrollView(
-            child: Column(
-              crossAxisAlignment: CrossAxisAlignment.start,
-              children: [
-                Text(
-                  'Good Morning',
-                  style: TextStyle(fontSize: 35.0, fontWeight: FontWeight.bold),
-                ),
-                SizedBox(
-                  height: 20.0,
-                ),
-                Text(
-                  'Himanshu !!',
-                  style: TextStyle(fontSize: 20.0),
-                ),
-                SizedBox(
-                  height: 30.0,
-                ),
-                Container(
-                  padding: EdgeInsets.all(height * 0.0184),
-                  decoration: BoxDecoration(
-                      color: Color(0xFFFAD89F),
-                      borderRadius: BorderRadius.all(Radius.circular(20))),
-                  child: Column(
-                    children: [
-                      Row(
-                        mainAxisAlignment: MainAxisAlignment.spaceBetween,
+        body: Column(
+          mainAxisAlignment: MainAxisAlignment.spaceBetween,
+          children: [
+            Container(
+              padding: EdgeInsets.only(left: 40.0, top: 60, right: 40.0),
+              child: SingleChildScrollView(
+                child: Column(
+                  crossAxisAlignment: CrossAxisAlignment.start,
+                  children: [
+                    Text(
+                      'Good Morning',
+                      style: TextStyle(
+                          fontSize: 35.0, fontWeight: FontWeight.bold),
+                    ),
+                    SizedBox(
+                      height: 20.0,
+                    ),
+                    Text(
+                      'Himanshu !!',
+                      style: TextStyle(fontSize: 20.0),
+                    ),
+                    SizedBox(
+                      height: 30.0,
+                    ),
+                    Container(
+                      padding: EdgeInsets.all(height * 0.0184),
+                      decoration: BoxDecoration(
+                          color: Color(0xFFFAD89F),
+                          borderRadius: BorderRadius.all(Radius.circular(20))),
+                      child: Column(
                         children: [
                           Row(
+                            mainAxisAlignment: MainAxisAlignment.spaceBetween,
                             children: [
-                              Icon(Icons.star),
-                              Text(
-                                'Great\nDecesion',
-                                style: TextStyle(fontSize: 30.0),
+                              Row(
+                                children: [
+                                  Icon(Icons.star),
+                                  Text(
+                                    'Great\nDecesion',
+                                    style: TextStyle(fontSize: 30.0),
+                                  ),
+                                ],
                               ),
+                              Material(
+                                elevation:
+                                    10.0, // Set the elevation value to give it a shadow.
+                                shape:
+                                    CircleBorder(), // Create a circular shape.
+                                child: Container(
+                                  width:
+                                      60.0, // Set the width of the circular container.
+                                  height:
+                                      60.0, // Set the height of the circular container.
+                                  decoration: BoxDecoration(
+                                      shape: BoxShape.circle,
+                                      color: Color(
+                                          0xFFFAD89F) // Set the background color of the circular container.
+                                      ),
+                                  child: Center(
+                                    child: Text(
+                                      'OK',
+                                      textAlign: TextAlign.center,
+                                    ),
+                                  ),
+                                ),
+                              )
                             ],
                           ),
-                          Material(
-                            elevation:
-                                10.0, // Set the elevation value to give it a shadow.
-                            shape: CircleBorder(), // Create a circular shape.
-                            child: Container(
-                              width:
-                                  60.0, // Set the width of the circular container.
-                              height:
-                                  60.0, // Set the height of the circular container.
-                              decoration: BoxDecoration(
-                                  shape: BoxShape.circle,
-                                  color: Color(
-                                      0xFFFAD89F) // Set the background color of the circular container.
-                                  ),
-                              child: Center(
-                                child: Text(
-                                  'OK',
-                                  textAlign: TextAlign.center,
-                                ),
-                              ),
-                            ),
-                          )
+                          SizedBox(
+                            height: 20.0,
+                          ),
+                          Text(
+                              'You are never to late to start thinking about your career.May you keep a objective mind and decide the career best for you')
                         ],
                       ),
-                      SizedBox(
-                        height: 20.0,
-                      ),
-                      Text(
-                          'You are never to late to start thinking about your career.May you keep a objective mind and decide the career best for you')
-                    ],
-                  ),
-                ),
-                SizedBox(
-                  height: 20.0,
-                ),
+                    ),
+                    SizedBox(
+                      height: 20.0,
+                    ),
 
-                //Choose/Graph Part
-                Wrap(
-                  children: [
-                    Row(
-                      mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                    //Choose/Graph Part
+                    Wrap(
                       children: [
-                        Container(
-                          width: width * 0.38,
-                          child: Column(
-                            crossAxisAlignment: CrossAxisAlignment.start,
-                            children: [
-                              Text(
-                                'Choose',
-                                style: textStyle2,
+                        Row(
+                          mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                          children: [
+                            Container(
+                              width: width * 0.38,
+                              child: Column(
+                                crossAxisAlignment: CrossAxisAlignment.start,
+                                children: [
+                                  Text(
+                                    'Choose',
+                                    style: textStyle2,
+                                  ),
+                                  Text(
+                                    'the best path with our guided',
+                                    style: textStyle1,
+                                  ),
+                                  Text(
+                                    'assistance for your Future career and make your strides in the right course of action',
+                                    style: textStyle1,
+                                  ),
+                                ],
                               ),
-                              Text(
-                                'the best path with our guided',
-                                style: textStyle1,
+                            ),
+                            ClipRect(
+                              child: Image.asset(
+                                'assets/Graph_asset.png',
+                                width: width * 0.4,
                               ),
-                              Text(
-                                'assistance for your Future career and make your strides in the right course of action',
-                                style: textStyle1,
-                              ),
-                            ],
-                          ),
-                        ),
-                        ClipRect(
-                          child: Image.asset(
-                            'assets/Graph_asset.png',
-                            width: width * 0.4,
-                          ),
+                            ),
+                          ],
                         ),
                       ],
-                    ),
+                    )
                   ],
-                )
-              ],
+                ),
+              ),
             ),
-          ),
+            Expanded(child: Image.asset('assets/bg2.png'))
+          ],
         ),
       ),
     );
