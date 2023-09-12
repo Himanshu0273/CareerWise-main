@@ -7,6 +7,8 @@ import 'register.dart';
 import 'homepage.dart';
 import 'data.dart';
 import 'components/textbox.dart';
+import 'homepage.dart';
+import 'register.dart';
 
 class Login extends StatelessWidget {
   const Login({super.key});
@@ -113,7 +115,7 @@ class Login extends StatelessWidget {
                         Navigator.pushReplacement<void, void>(
                           context,
                           MaterialPageRoute<void>(
-                            builder: (BuildContext context) => HomPage(),
+                            builder: (BuildContext context) => HomePage(),
                           ),
                         );
                       },
