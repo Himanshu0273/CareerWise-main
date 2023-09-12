@@ -151,30 +151,33 @@ class _RegisterState extends State<Register> {
                 Wrap(
                   children: [
                     Row(
+                      mainAxisAlignment: MainAxisAlignment.spaceBetween,
                       children: [
-                        Column(
-                          crossAxisAlignment: CrossAxisAlignment.start,
-                          children: [
-                            Text(
-                              'Choose',
-                              style: textStyle2,
-                            ),
-                            Text(
-                              'the best path\nwith our guided',
-                              style: textStyle1,
-                            ),
-                            Text(
-                              'assistance for your\nFuture career and\nmake your strides\nin the right course\nof action',
-                              style: textStyle1,
-                            ),
-                          ],
+                        Container(
+                          width: width * 0.38,
+                          child: Column(
+                            crossAxisAlignment: CrossAxisAlignment.start,
+                            children: [
+                              Text(
+                                'Choose',
+                                style: textStyle2,
+                              ),
+                              Text(
+                                'the best path with our guided',
+                                style: textStyle1,
+                              ),
+                              Text(
+                                'assistance for your Future career and make your strides in the right course of action',
+                                style: textStyle1,
+                              ),
+                            ],
+                          ),
                         ),
-                        SizedBox(
-                          width: width * 0.04,
-                        ),
-                        Image.asset(
-                          'assets/Graph_asset.png',
-                          width: width * 0.4,
+                        ClipRect(
+                          child: Image.asset(
+                            'assets/Graph_asset.png',
+                            width: width * 0.4,
+                          ),
                         ),
                       ],
                     ),
