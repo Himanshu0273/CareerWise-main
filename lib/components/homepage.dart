@@ -10,8 +10,8 @@ import 'package:hackheads/components/contants.dart';
 import 'package:hackheads/components/widgets.dart';
 import 'package:google_nav_bar/google_nav_bar.dart';
 import 'package:hackheads/login.dart';
+import 'package:hackheads/profile.dart';
 import 'data.dart';
-import 'profile.dart';
 
 class HomePage extends StatefulWidget {
   HomePage({super.key});

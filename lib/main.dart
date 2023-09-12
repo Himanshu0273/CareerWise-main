@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
-import 'pages/login.dart';
-import 'data.dart';
+import 'package:hackheads/components/data.dart';
+import 'login.dart';
+import 'package:hackheads/components/data.dart';
 
 void main() {
   runApp(MaterialApp(

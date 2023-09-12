@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import '../data.dart';
+import '../components/data.dart';
 
 class LineOrLine extends StatelessWidget {
   const LineOrLine({
