@@ -4,8 +4,15 @@ import 'package:flutter/material.dart';
 import 'package:hackheads/data.dart';
 import '../components/widgets.dart';
 import 'register.dart';
-import 'profile.dart';
+import 'homepage.dart';
+<<<<<<< HEAD:lib/pages/login.dart
 import '../components/textbox.dart';
+=======
+import 'data.dart';
+import 'components/textbox.dart';
+import 'homepage.dart';
+import 'register.dart';
+>>>>>>> 2f935dae3ce313fae41215ff859aff9747c1bb6c:lib/login.dart
 
 class Login extends StatelessWidget {
   const Login({super.key});
@@ -112,7 +119,7 @@ class Login extends StatelessWidget {
                         Navigator.pushReplacement<void, void>(
                           context,
                           MaterialPageRoute<void>(
-                            builder: (BuildContext context) => HomPage(),
+                            builder: (BuildContext context) => HomePage(),
                           ),
                         );
                       },
