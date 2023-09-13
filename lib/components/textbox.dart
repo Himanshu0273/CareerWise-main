@@ -10,6 +10,7 @@ class TextBox extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return TextField(
+      obscureText: true,
       textAlign: TextAlign.center, // Center the text horizontally.
       style: TextStyle(fontSize: 16.0), // Adjust the font size.
       decoration: InputDecoration(
