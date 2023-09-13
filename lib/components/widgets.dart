@@ -130,9 +130,10 @@ class SignInWithGoogle extends StatelessWidget {
           mainAxisAlignment: MainAxisAlignment.center,
           mainAxisSize: MainAxisSize.min,
           children: <Widget>[
-            Image.network(
-                'http://pngimg.com/uploads/google/google_PNG19635.png',
-                fit: BoxFit.cover),
+            Image.asset(
+              'assets/google.png',
+              fit: BoxFit.cover,
+            ),
             SizedBox(
               width: width * 0.076,
             ),

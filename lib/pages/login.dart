@@ -1,11 +1,11 @@
 // ignore_for_file: prefer_const_constructors
 
 import 'package:flutter/material.dart';
-import 'package:hackheads/components/homepage.dart';
-import 'package:hackheads/register.dart';
-import 'components/widgets.dart';
+import 'package:hackheads/pages/homepage.dart';
+import 'package:hackheads/components/register.dart';
+import '../components/widgets.dart';
 import 'package:hackheads/components/data.dart';
-import 'components/textbox.dart';
+import '../components/textbox.dart';
 
 class Login extends StatelessWidget {
   const Login({super.key});

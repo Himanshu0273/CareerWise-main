@@ -2,8 +2,8 @@
 
 import 'package:flutter/material.dart';
 import 'package:hackheads/components/widgets.dart';
-import 'components/data.dart';
-import 'components/contants.dart';
+import '../components/data.dart';
+import '../components/contants.dart';
 
 class Profile extends StatelessWidget {
   const Profile({super.key});

@@ -1,7 +1,7 @@
 import 'package:firebase_auth/firebase_auth.dart';
 import 'package:flutter/material.dart';
-import 'components/data.dart';
-import 'components/widgets.dart';
+import 'data.dart';
+import 'widgets.dart';
 import 'dart:ui';
 
 class Register extends StatelessWidget {
