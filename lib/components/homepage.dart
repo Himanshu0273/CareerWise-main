@@ -50,8 +50,8 @@ class _HomePageState extends State<HomePage> {
             gap: 8,
             // Need to make changes here for better looking bottom bar
             backgroundColor: Color(0xFFF28F3B),
-            activeColor: Colors.white,
-            tabBackgroundColor: Colors.grey.shade400,
+            activeColor: Colors.black,
+            tabBackgroundColor: Color(0xFFF5F5F5),
             tabBorderRadius: 10.0,
             selectedIndex: _selectedIndex,
             onTabChange: (index) {
